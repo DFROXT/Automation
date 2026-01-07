@@ -1,6 +1,6 @@
 flask
 groq
-moviepy
+moviepy==1.0.3
 gtts
 selenium
 opencv-python
