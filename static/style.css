@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #020617, #0f172a);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    opacity: 0.8;
+}
+
+button {
+    margin-top: 20px;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #22c55e;
+    color: #022c22;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #16a34a;
+}
+
+small {
+    display: block;
+    margin-top: 25px;
+    opacity: 0.6;
+}
