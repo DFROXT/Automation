@@ -1,14 +1,15 @@
-from gtts import gTTS
-from moviepy.editor import ColorClip, AudioFileClip
 
 def create_video(script):
+    # Lazy imports (Render-safe)
+    from gtts import gTTS
+    from moviepy.editor import ColorClip, AudioFileClip
+
     # Voice
     tts = gTTS(text=script, lang="en")
     tts.save("voice.mp3")
 
     audio = AudioFileClip("voice.mp3")
 
-    # Simple 9:16 background (NO TextClip)
     video = ColorClip(
         size=(1080, 1920),
         color=(15, 15, 15),
